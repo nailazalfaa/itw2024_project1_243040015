@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 :root {
@@ -15,7 +16,6 @@ html {
 }
 
 body {
-    overflow-x: hidden;
     background-color: var(--bg-color);
     color: var(--text-color);
 }
@@ -915,6 +915,9 @@ h2 span {
 /* Ukuran tablet */
 /* Ukuran tablet */
 @media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
     /* Navbar */
     nav ul {
         position: absolute;
