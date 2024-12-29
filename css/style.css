@@ -219,7 +219,7 @@ nav ul li a:hover {
     border: 2px solid var(--main-color);
     letter-spacing: 0.1rem;
     cursor: pointer;
-    transition: 0.3s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
 
 .home-img button:hover {
@@ -328,6 +328,7 @@ nav ul li a:hover {
     letter-spacing: 1px;
     line-height: 28px;
     font-size: 18px;
+    text-align: justify;
     margin-bottom: 45px;
 }
 
@@ -480,6 +481,8 @@ nav ul li a:hover {
 
 p {
     color: #000;
+    font-size: 15px;
+    text-align: center;
 }
 
 .img {
@@ -549,6 +552,7 @@ p {
     text-align: center;
     margin-top: -30px;
 }
+
 /* gambar - 2 */
 .wrapper-1 {
     margin: auto;
@@ -808,16 +812,25 @@ h2 span {
   .btn1 {
     display: inline-block;
     padding: 1rem 2.8rem;
-    background: var(--main-color);
-    box-shadow: 0 0 25px var(--main-color);
+    background: var(--bg-color);
+    /* box-shadow: 0 0 25px var(--main-color); */
     border-radius: 4rem;
     font-size: 1.6rem;
-    color: black;
-    border: 2px solid transparent;
+    color: var(--text-color);
+    border: 2px solid var(--main-color);
     letter-spacing: 0.1rem;
     font-weight: 600;
     transition: 0.3s ease-in-out;
     cursor: pointer;
+  }
+
+  .btn1:hover {
+    background-color: var(--main-color);
+    border: 2px solid var(--main-color);
+    cursor: pointer;
+    color: var(--text-color);
+    transform: scale(1.1)translateY(-5px);
+    box-shadow: 0 0 25px var(--main-color);
   }
 /* akhir kontak */
 
@@ -935,6 +948,7 @@ h2 span {
         position: relative;
         margin-left: -10%;
     }
+
     /* akhir navbar */
 
 
@@ -943,6 +957,7 @@ h2 span {
         position: relative;
         justify-content: space-evenly;
         align-items: center;
+        left: 6%;
         background-color: rgba(0, 0, 0, 0.5);
     }
 
@@ -964,15 +979,7 @@ h2 span {
         padding: 20px;
     }
 
-    .about-text p {
-        text-align: center;
-    }
-
-    .about img {
-        width: 80%;
-        margin: auto;
-       
-    }
+    
 
 
     /* about */
@@ -981,10 +988,54 @@ h2 span {
         margin-top: 5%;
     }
 
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .grid {
-        display: inline;
+        display: flex;
         flex-direction: column;
     }
+
+   
+
+    .about-text p {
+        text-align: center;
+    }
+
+    .about-text .text {
+        color: var(--text-color);
+        font-size: 70px;
+    }
+
+    .about-text .text span{
+        color: var(--main-color);
+    }
+
+    .about-text h2 {
+        color: #000000;
+        font-size: 20px;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .about img {
+        width: 100%;
+        margin: auto;
+       
+    }
+
+    .overlay {
+        overflow: scroll;
+     }
+
+    .img-animasi {
+        width: 50%;
+        display: flex;
+    }
+
     /* akhir about */
 
 
@@ -1006,6 +1057,21 @@ h2 span {
         padding: 20px;
     }
     /* akhir skill */
+
+    /* contact */
+    .contact form {
+        flex-direction: column;
+    }
+
+    .input-group-2 {
+        width: 60%;
+        margin-right: 8%;
+    }
+
+    .btn1 {
+        margin-left: 15%;
+    }
+    /* akhir contact */
 }
 
 @media screen and (max-width: 576px) {
@@ -1082,6 +1148,11 @@ h2 span {
      .overlay {
         overflow: scroll;
      }
+
+     .img-animasi {
+        width: 90%;
+        display: flex;
+    }
     /* akhir about */
     
 
