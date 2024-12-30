@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
 }
 
 :root {
@@ -13,6 +12,7 @@
 
 html {
     font-size: 60%;
+    overflow-x: hidden;
 }
 
 body {
@@ -913,11 +913,10 @@ h2 span {
 
 /* Tambahan untuk responsivitas */
 /* Ukuran tablet */
-/* Ukuran tablet */
 @media screen and (max-width: 768px) {
-    body {
+    /* body {
         overflow-x: hidden;
-    }
+    } */
     /* Navbar */
     nav ul {
         position: absolute;
@@ -1111,7 +1110,7 @@ h2 span {
     /* home */
     .home-img {
         position: relative;
-        margin-top: 2%;
+        margin-top: 10%;
         right: -1%;
         justify-content: space-evenly;
         align-items: center;
@@ -1123,6 +1122,10 @@ h2 span {
         margin-top: 15px;
     }
 
+    #p {
+        font-size: 15px;
+    }
+
     .home-img img {
         width: 50%;
         margin: 2%;
@@ -1132,7 +1135,7 @@ h2 span {
 
     /* about */
     .about img {
-        width: 80%;
+        width: 100%;
     }
 
     .about-text {
@@ -1151,7 +1154,7 @@ h2 span {
      }
 
      .overlay {
-        overflow: scroll;
+        overflow-x: scroll;
      }
 
      .img-animasi {
@@ -1171,11 +1174,11 @@ h2 span {
         width: 50%;
         height: 100vh;
         margin-bottom: 110%;
+        right: 43px;
     }
 
     h2 {
-        font-size: 75px;
-        text-align: left;
+        font-size: 50px;
     }
 
     p {
@@ -1183,7 +1186,7 @@ h2 span {
     }
 
     .content {
-        width: 60%;
+        width: auto;
         margin-top: 30px;
     }
     /* akhir project */
