@@ -12,7 +12,7 @@
 
 html {
     font-size: 60%;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
 body {
@@ -1134,8 +1134,8 @@ h2 span {
 
 
     /* about */
-    .about img {
-        width: 100%;
+    .img-animasi img {
+        width: 65%;
     }
 
     .about-text {
